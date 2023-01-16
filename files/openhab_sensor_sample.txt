@@ -1,0 +1,30 @@
+UID: http:url:d86b623fab
+label: NodeMCU-Sensor
+thingTypeUID: http:url
+configuration:
+  authMode: BASIC
+  ignoreSSLErrors: false
+  baseURL: http://192.168.100.2/123456789012
+  delay: 3
+  stateMethod: GET
+  refresh: 5
+  commandMethod: GET
+  timeout: 3000
+  bufferSize: 2048
+channels:
+  - id: nu-temp
+    channelTypeUID: http:number
+    label: nu-temp
+    description: null
+    configuration:
+      mode: READONLY
+      stateExtension: /?req=stat
+      stateTransformation: JSONPATH:$.temp
+  - id: nu-hum
+    channelTypeUID: http:number
+    label: nu-hum
+    description: null
+    configuration:
+      mode: READONLY
+      stateExtension: /?req=stat
+      stateTransformation: JSONPATH:$.hum
