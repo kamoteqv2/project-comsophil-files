@@ -1,0 +1,4 @@
+gmail.com
+github.com
+https://myopenhab.org/login
+https://developer.amazon.com/alexa/console/ask
