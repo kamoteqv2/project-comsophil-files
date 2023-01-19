@@ -1,4 +1,4 @@
-gmail.com
-github.com
-https://myopenhab.org/login
-https://developer.amazon.com/alexa/console/ask
+(create a gmail account) gmail.com
+(create a github account) github.com
+(create an openHAB cloud account) https://myopenhab.org/login
+(create an alexa developer account) https://developer.amazon.com/alexa/console/ask
